@@ -65,7 +65,7 @@ main{
 /* modal */
   
 .modal {
-    display: none;
+    display: block;
     position: fixed;
     top: 0;
     bottom: 0;
@@ -119,13 +119,17 @@ main{
 .modal-choice-btns{
     margin-top: 10px;
     padding: 8px 16px;
-    display: flex;
+    display:flex;
     justify-content: center;
+    align-items: center;
+    
 }
 
 .modal-btn{
     padding: 10px 24px;
     cursor: pointer;
+
+   
 }
 
 /* modal input */
@@ -153,4 +157,8 @@ input{
     height: 140px;
     line-height: 23px;
     margin-bottom: 0;
+}
+
+.swap{
+    flex-direction: row-reverse;
 }
